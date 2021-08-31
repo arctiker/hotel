@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 120px;
+    width: 1026px;
+    height: 145px;
+    background-color: #2b2b2b;
+}
+
+.spinner {
+    display: flex;
+    height: 20px;
+    width: 300px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+   
+}
+
+label {
+    color: white;
+}
+
+
+.spinner span:hover {
+    cursor: pointer;
+}
+
+.search-btn {
+    background-color: rgb(12, 19, 117);
+    color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
