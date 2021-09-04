@@ -6,6 +6,7 @@
     width: 100%;
     height: 70px;
     border: 2px solid rgb(231, 231, 231);
+    margin-bottom: 30px;
 }
 
 .link {
@@ -15,6 +16,9 @@
     justify-content: center;
     text-shadow: 1px 3px 3px #474747;
     text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Josefin Sans;
 
     .option {
       padding: 10px 15px;
@@ -34,3 +38,17 @@
    justify-content: center;
    border: none;
 }
+
+.select {
+    border: none;
+    background-color: white;
+    text-shadow: 1px 3px 3px #474747;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .select:hover {
+      cursor: pointer;
+  }

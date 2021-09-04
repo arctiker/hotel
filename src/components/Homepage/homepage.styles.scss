@@ -1,23 +1,6 @@
-.left {
-    float: left;
-    position: relative;
-    right: 70px;
-    top: 200px;
-    transform: rotate(-90deg);
-}
-
-h1 {
-    font-family: Oblik;
-    font-size: 24px;
-    line-height: 50px;
-}
-
-img {
-    display: block;
-    margin-left: 120px;
-    width: 1102px;
-    height:  466px;
-    width: 90%;
-    max-width:100%;
-    max-height:100%;
+.hompage-container {
+    background-image: url(../../assets/snow.jpg); 
+    background-size: 89% 60%;
+    background-position-x: 130px;
+    background-repeat: no-repeat;
 }
