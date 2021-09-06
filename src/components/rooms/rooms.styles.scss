@@ -1,0 +1,21 @@
+.room-container {
+    display: flex;
+    border-style: inset;
+}
+
+.room-img {
+    display: flex;
+    width: 1155px;
+    height: 359px;
+}
+
+span {
+    font-family: Oblik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    opacity: 0.9;
+    transform: rotate(-90deg);
+}
+

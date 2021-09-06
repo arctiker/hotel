@@ -1,19 +1,30 @@
 .container-datepicker {
+    background-image: url(../../assets/snow.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 1250px;
+    height: 466px;
+    margin-left: 30px;
+    margin-top: 50px;
+
 }
 
 .container-innerpicker {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.55);
-    position: relative;
-    top: 150px;
     width: 1026px;
     height: 145px;
+}
+
+.sub-innerpicker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .left {
@@ -24,27 +35,27 @@
     line-height: 50px;
     opacity: 0.9;
     transform: rotate(-90deg);
-    position: relative;
-    right: 840px;
-    top: 135px;
+    white-space: nowrap;
+    margin-right: 640px;
+    margin-left: -640px;
 }
 
 label {
-    position: relative;
     bottom: 45px;
     left: 60px;
     white-space: nowrap;
     color: white;
+    margin-bottom: 10px;
 }
 
 .spinner {
-    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     width: 222px;
     height: 59px;
-    align-items: center;
-    justify-content: space-between;
+    border: none;
 }
 
 .spinner:hover {
@@ -52,6 +63,7 @@ label {
 }
 
 .date-picker {
+    border: none;
     width: 222px;
     height: 59px;
     font-family: Josefin Sans;
@@ -62,13 +74,18 @@ label {
 }
 
 .search-btn {
-    position: relative;
     width: 158px;
     height: 59px;
     background-color: #073762;
     color: white;
+    border: none;
+    margin: 18px 0px 0px 0px ;
 }
 
 .search-btn:hover {
     cursor: pointer;
+}
+
+.space {
+    width: 25px;
 }

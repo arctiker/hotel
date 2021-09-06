@@ -1,14 +1,13 @@
-import Header from './components/header/header';
 import Homepage from './components/Homepage/homepage';
 
 import { BrowserRouter } from 'react-router-dom';
 
+import Test from './components/test/Test';
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Header />
         <Homepage /> 
       </BrowserRouter>
       

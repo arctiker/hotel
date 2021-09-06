@@ -1,14 +1,11 @@
 import './datePicker.styles.scss';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useState } from 'react';
 
-import { ReactComponent as RightArrow } from '../../assets/RightArrow.svg';
-import { ReactComponent as LeftArrow } from '../../assets/LeftArrow.svg';
+import { ReactComponent as Vector } from '../../assets/Vector.svg';
 
 
 
-import nature3 from '../../assets/nature3.jpg';
 
 import * as Styles from '../svg-style';
 
@@ -31,41 +28,46 @@ function Date() {
 
   return (
     <div className='container-datepicker'>
-      <div className='left'>
-          <span>BEST PRICE GUARANTEED</span>
-      </div>
+      <span className='left'>BEST PRICE GUARANTEED</span>
       <div className='container-innerpicker'>
-          <label>Check-In</label>
-          <DatePicker
+        <div className='sub-innerpicker'>
+        <label>Check-In</label>
+          <input
           className='date-picker'
+          type='date'
           dateFormat="dd/MM/yyyy"
-          placeholderText='Day/Month/Year'
+          placeholder='Day/Month/Year'
           selected={selectDate}
           onChange={date => setSelectDate(date)}
           />
-          <label>Check-Out</label>
-          <DatePicker
+        </div>
+
+        <div className='sub-innerpicker'>
+        <label>Check-Out</label>
+          <input
           className='date-picker'
+          type='date'
           dateFormat="dd/MM/yyyy"
           placeholderText='Day/Month/Year'
           selected={optionDate}
           onChange={date => setOptionDate(date)}
           />
-
-           <label>Nights</label>
-        <div className='spinner'>
-            <span onClick={handleDecrement} style={Styles.style1}>
-              <LeftArrow />
-            </span>
-            <h5>{count}</h5>
-            <span onClick={handleIncrement} style={Styles.style1}>
-              <RightArrow />
-            </span>
         </div>
+
+        <div className='sub-innerpicker'>
+        <label>Nights</label>
+          <div className='spinner'>
+            <h5>{count}</h5>
+            <span className='space'></span>
+            <span onClick={handleIncrement} style={Styles.style1}>
+              <Vector />
+            </span>
+          </div >
+           </div>
           <button className='search-btn'>
               Search
           </button>
-          </div>
+        </div>
     </div>
   );
 }

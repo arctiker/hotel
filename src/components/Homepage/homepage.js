@@ -1,16 +1,19 @@
 import React from 'react'
 
 import './homepage.styles.scss';
-import snow from '../../assets/snow.jpg';
-
 
 import Date from '../datePicker/datePicker';
 import Icons from '../icons/icons';
+import Header from '../header/header';
+import Rooms from '../rooms/rooms';
+
+
 
 
 function Homepage() {
     return (
         <div className='hompage-container'>
+            <Header />
             <Date />
             <Icons />
         </div>
