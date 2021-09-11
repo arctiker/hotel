@@ -3,14 +3,18 @@ import './rooms.styles.scss';
 
 import { ReactComponent as Room } from '../../assets/room1.svg';
 import { ReactComponent as RoomIcon } from '../../assets/roomIcons.svg';
+import { ReactComponent as Vector } from '../../assets/Vector.svg';
 
 function Rooms() {
     return (
         <div className='room-container'>
-                <span className='left1'>ECONOMY DOUBLE ROOM</span>
+            <div className='left1'>
+                <span>ECONOMY DOUBLE ROOM</span>
+            </div>
+                
             <div className='room-img'>
                 <Room />
-            <div>                
+            <div className='middle-section'>                   
                 <ul>
                     <li>
                         <option>Shared Bathroom</option>
@@ -28,17 +32,20 @@ function Rooms() {
                         <option>14 day cancellation</option>
                     </li>
                 </ul>
-            </div>
-            <div className='room-icons'>
+                <span className='more-white-space'></span>
                 <RoomIcon />
             </div>
             <div className='room-booking'>
-                <p>$ 72</p>
-                <p>per night</p>
-                <h6>14 day cancellation</h6>
-                <button>Quantity</button>
-                <button>Guests</button>
-                <button>BOOK</button>
+                <div className='room-pernight'>
+                    <p className='p1'>$ 72</p>
+                    <p className='p2'>per night</p>
+                    <p className='p3'>14 day cancellation</p>
+                </div>
+                <div className='room-clicks'>
+                    <button className='bttn-1'>Quantity<span className='btn-space'></span><Vector /></button>
+                    <button className='bttn-2'>Guests<span className='btn-space'></span><Vector /></button>
+                    <button className='bttn-3'>BOOK</button>
+                </div>
             </div>
 
             </div>        

@@ -3,27 +3,25 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { useState } from 'react';
 
 import { ReactComponent as Vector } from '../../assets/Vector.svg';
-
-
-
-
+import * as moment from 'moment';
 import * as Styles from '../svg-style';
 
-function Date() {
+function Dates() {
+  let newDate = moment(new Date()).format('YYYY-MM-DD')
 
-  const [selectDate, setSelectDate] = useState(null);
-  const [optionDate, setOptionDate] = useState(null);
-  const [count, setCount] = useState(1);
+  const [checkInDate, setCheckInDate] = useState(newDate);
+  const [checkOutDate, setCheckOuteDate] = useState(newDate);
+  const [count, setCount] = useState(0);
+
+  const newCheckIn = new Date(checkInDate)
+  const newChekOut = new Date(checkOutDate)
+
+  let timeDifference =  newChekOut.getTime() - newCheckIn.getTime();
+  let oldDayDifference = timeDifference / (1000 * 3600 * 24);
+  let dayDifference = Math.round(oldDayDifference);
 
   const handleIncrement = () => {
     setCount(count => count + 1);
-  };
-
-  const handleDecrement = () => {
-    if (count < 2){setCount(count => count)}
-    else {
-      setCount(count => count -1);
-    }
   };
 
   return (
@@ -35,10 +33,8 @@ function Date() {
           <input
           className='date-picker'
           type='date'
-          dateFormat="dd/MM/yyyy"
-          placeholder='Day/Month/Year'
-          selected={selectDate}
-          onChange={date => setSelectDate(date)}
+          selected={checkInDate}
+          onChange={(event) => {setCheckInDate(event.target.value)}}
           />
         </div>
 
@@ -47,18 +43,15 @@ function Date() {
           <input
           className='date-picker'
           type='date'
-          dateFormat="dd/MM/yyyy"
-          placeholderText='Day/Month/Year'
-          selected={optionDate}
-          onChange={date => setOptionDate(date)}
+          selected={checkOutDate}
+          onChange={(event) => {setCheckOuteDate(event.target.value)}}
           />
         </div>
 
         <div className='sub-innerpicker'>
         <label>Nights</label>
           <div className='spinner'>
-            <h5>{count}</h5>
-            <span className='space'></span>
+            <h5 className='space'>{dayDifference}</h5>
             <span onClick={handleIncrement} style={Styles.style1}>
               <Vector />
             </span>
@@ -72,4 +65,4 @@ function Date() {
   );
 }
 
-export default Date;
+export default Dates;

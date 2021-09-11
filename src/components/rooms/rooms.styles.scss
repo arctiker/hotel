@@ -1,15 +1,22 @@
 .room-container {
     display: flex;
-    border-style: inset;
+    justify-content: center;
+    align-items: center;
 }
 
 .room-img {
     display: flex;
-    width: 1155px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    width: 1100px;
     height: 359px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+    margin-right: 250px;
 }
 
-span {
+.left1 {
     font-family: Oblik;
     font-style: normal;
     font-weight: bold;
@@ -17,5 +24,99 @@ span {
     line-height: 50px;
     opacity: 0.9;
     transform: rotate(-90deg);
+    color: #14202B;
+    white-space: nowrap;
+    margin-left: 135px;
+    margin-right: -135px;
+    margin-bottom: 30px;
 }
 
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.more-white-space {
+    margin: 20px;
+}
+
+.room-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room-pernight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+    margin-top: -75px; 
+}
+
+.p1 {
+    font-size: 48px;
+    line-height: 50px;
+    margin: 0px;
+    
+}
+
+.p2 {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.p3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.room-clicks {
+    
+}
+
+.bttn-1 {
+    border: 1px solid #073865;
+    box-sizing: border-box;
+    width: 112px;
+    height: 40px;
+    position: relative;
+    bottom: 50px;
+    left: 55px;
+    cursor: pointer;
+}
+
+.bttn-2 {
+    border: 1px solid #073865;
+    box-sizing: border-box;
+    width: 112px;
+    height: 40px;
+    position: relative;
+    bottom: 50px;
+    left: 75px;
+    cursor: pointer;
+}
+
+.bttn-3 {
+    width: 112px;
+    height: 40px;
+    background: #073762;
+    position: relative;
+    right: 105px;
+    color: white;
+    cursor: pointer;
+    top: 35px;
+}
+
+.btn-space {
+    margin: 15px;
+}

@@ -1,16 +1,33 @@
 import React from 'react'
-import moment from 'moment';
+import Person from './test2'
 
 export default function Test() {
 
-    const a = moment([2021, 0, 5]);
-    const b = moment([2021, 0, 10]);
-    a.diff(b)
+    const person =[
+        {
+            id: 1,
+            name:'ahmad',
+            age: 30,
+            skill: 'React'
+        },
+        {
+            id: 2,
+            name:'luai',
+            age: 31,
+            skill: 'Angular'
+        },
+        {
+            id: 3,
+            name:'ali',
+            age: 35,
+            skill: 'Redux'
+        }
+    ]
+    const personList = person.map(person => <Person person={person} />)
 
     return (
         <div>
-            <input>{a}</input>
-            <input>{b}</input>
+            {personList}
         </div>
     )
 }

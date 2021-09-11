@@ -1,0 +1,66 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 110px 140px 110px 140px;
+    width: 1440px;
+    height: 547px;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 110px;
+    top: 75px;
+    line-height: 5em;
+}
+
+.contact-us {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 30pt;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.contactus-whitespace {
+    margin: 15px;
+}
+
+.our-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-us {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 300;
+}
+
+.footer-input {
+    background: #FFFFFF;
+    border: 1px solid #C6D1DB;
+    box-sizing: border-box;
+    width: 395px;
+    height: 57px;
+    text-align: center;
+}
+
+.footer-btn {
+    background: #073762;
+    width: 395px;
+    height: 57px;
+    color: white;
+}
+
+.footer-whitespace {
+    margin: 20px;
+}

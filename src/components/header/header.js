@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.styles.scss';
-import { ReactComponent as Logo } from '../../assets/frame.svg';
+import logo from '../../assets/frame.svg';
 
 
 function Header() {
     return (
     <div className='header'>
-        <div className='logo'>
-            <Logo />
-        </div>
+        <img src={logo} alt='' className='logo' />
+        
         <div className='links'>            
             <Link className='link' style={{color: 'black'}}>GALLERY</Link>
             <Link className='link' style={{color: 'black'}}>NORTHERN LIGHTS</Link>
